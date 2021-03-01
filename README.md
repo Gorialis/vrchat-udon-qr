@@ -12,6 +12,7 @@ a library for creating dynamic QR codes in VRChat worlds
 <br>
 <sup>
     <a href="https://vrchat.com/home/world/wrld_c098235d-591e-4580-9a36-4fc09db61a24">See it in VRChat</a>
+    (Community Labs pending)
 </sup>
 </p>
 
