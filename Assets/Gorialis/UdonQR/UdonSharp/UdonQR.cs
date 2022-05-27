@@ -2,7 +2,7 @@
 /*
 MIT License
 
-Copyright (c) 2021 Devon (Gorialis) R
+Copyright (c) 2021-present Devon (Gorialis) R
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -76,7 +76,7 @@ public class UdonQR : UdonSharpBehaviour
 
         for (int i = 0; i < writeIndex; i++)
             output[i] = buffer[i];
-        
+
         return output;
     }
 
@@ -652,7 +652,7 @@ public class UdonQR : UdonSharpBehaviour
 
                     if (rs_trim_offset > 0) {
                         new_rs_polynomial = new byte[rs_polynomial.Length - rs_trim_offset];
-                        
+
                         for (int j = rs_trim_offset; j < rs_polynomial.Length; j++)
                             new_rs_polynomial[j - rs_trim_offset] = rs_polynomial[j];
 
@@ -673,7 +673,7 @@ public class UdonQR : UdonSharpBehaviour
 
             if (offset > 0) {
                 new_raw_polynomial = new byte[raw_polynomial.Length - offset];
-                
+
                 for (int j = offset; j < raw_polynomial.Length; j++)
                     new_raw_polynomial[j - offset] = raw_polynomial[j];
 
@@ -693,7 +693,7 @@ public class UdonQR : UdonSharpBehaviour
                     modulo_polynomial = left_side;
                     break;
                 }
-                
+
                 int ratio = LOGARITHM_TABLE[left_side[0]] - LOGARITHM_TABLE[right_side[0]];
                 byte[] output_polynomial = new byte[left_side.Length];
 
@@ -712,7 +712,7 @@ public class UdonQR : UdonSharpBehaviour
 
                 if (offset > 0) {
                     new_left_polynomial = new byte[output_polynomial.Length - offset];
-                    
+
                     for (int j = offset; j < output_polynomial.Length; j++)
                         new_left_polynomial[j - offset] = output_polynomial[j];
 
@@ -729,7 +729,7 @@ public class UdonQR : UdonSharpBehaviour
 
                 ecdata[r][i] = (byte)(mod_index >= 0 ? modulo_polynomial[mod_index] : 0);
             }
-            
+
         }
 
         byte[] data_cache = new byte[total_code_count];
@@ -832,7 +832,7 @@ public class UdonQR : UdonSharpBehaviour
 
     void Start()
     {
-        
+
     }
 }
 

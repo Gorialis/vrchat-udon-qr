@@ -25,7 +25,7 @@ public class UdonQRCanvasSetter : UdonSharpBehaviour
 
     void Start()
     {
-        
+
     }
 }
 
@@ -42,6 +42,9 @@ public class UdonQRCanvasSetterEditor : Editor
         if (UdonSharpGUI.DrawDefaultUdonSharpBehaviourHeader(target)) return;
 
         UdonQRCanvasSetter inspectorBehaviour = (UdonQRCanvasSetter)target;
+
+        Undo.RecordObject(inspectorBehaviour, "Edited UdonQRCanvasSetter settings");
+        PrefabUtility.RecordPrefabInstancePropertyModifications(inspectorBehaviour);
 
         EditorGUILayout.LabelField("UdonQR library object:");
         inspectorBehaviour._qrLibrary = (UdonQR)EditorGUILayout.ObjectField(inspectorBehaviour._qrLibrary, typeof(UdonQR), true);
