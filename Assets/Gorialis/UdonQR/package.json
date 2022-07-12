@@ -1,0 +1,20 @@
+{
+	"name" : "com.github.gorialis.vrchat-udon-qr",
+	"displayName" : "Udon QR",
+	"version" : "1.1.0",
+	"unity" : "2019.4",
+	"description" : "a library for creating dynamic QR codes in VRChat worlds",
+	"author" : {
+		"name" : "Gorialis",
+		"url" : "https://github.com/Gorialis"
+	},
+	"gitDependencies" : {
+		"com.vrchat.base" : "https://github.com/vrchat/packages.git?path=/packages/com.vrchat.base#3.0.4",
+		"com.vrchat.worlds" : "https://github.com/vrchat/packages.git?path=/packages/com.vrchat.worlds#3.0.4",
+		"com.vrchat.udonsharp": "https://github.com/anatawa12/UdonSharp.git?path=Packages/com.vrchat.UdonSharp#1.0.1"
+	},
+	"url" : "https://github.com/Gorialis/vrchat-udon-qr.git?path=/Assets/Gorialis/UdonQR#1.1.0",
+	"legacyFolders" : {
+		"Assets\\Gorialis\\UdonQR" : "adfa73af47cad984db0be1362099410b"
+	}
+}
